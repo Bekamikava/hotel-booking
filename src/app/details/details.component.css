@@ -1,0 +1,54 @@
+:host {
+  background-color:#2c3e50; /* მაგალითად ღია ცისფერი */
+  display: block;
+  min-height: 100vh;
+}
+.carousel{
+    width: 450px ;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   gap: 60px;
+}
+.d-block{
+    border-radius: 10px;
+}
+/* Room Card Styles */
+.room-card {
+  margin-top: 200px;
+  background-image: url("https://plus.unsplash.com/premium_photo-1675620963970-41055a7d6cfc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VhfGVufDB8fDB8fHww");
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.room-card h4 {
+  color: #114d02; 
+}
+
+.room-card p {
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+
+
+.room-card .guests {
+  color: #6c757d; 
+}
+
+
+.carousel-inner img {
+  height: 300px;
+  object-fit: cover;
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: white; 
+}

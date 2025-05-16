@@ -1,0 +1,52 @@
+<section>
+  <div
+    style="margin-top: 200px"
+    *ngFor="let room of products.rooms"
+    class="room-card mb-5 p-3 border rounded shadow-sm"
+  >
+    <div
+      id="carouselRoom{{ room.id }}"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div
+          *ngFor="let img of room.images; let i = index"
+          class="carousel-item"
+          [class.active]="i === 0"
+        >
+          <img
+            [src]="img.source"
+            class="d-block w-100"
+            style="height: 300px; object-fit: cover"
+            alt="Room image"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        [attr.data-bs-target]="'#carouselRoom' + room.id"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        [attr.data-bs-target]="'#carouselRoom' + room.id"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <h4>{{ room.name }}</h4>
+    <p>Price per night: ${{ room.pricePerNight }}</p>
+    <p>Guests: up to {{ room.maximumGuests }}</p>
+    <p *ngIf="room.available" class="text-success">Available</p>
+    <p *ngIf="!room.available" class="text-danger">Not Available</p>
+<a class="btn btn-dark" [routerLink]="['/booking', room.id]">
+  დეტალურად ნახვა
+</a>  </div>
+</section>

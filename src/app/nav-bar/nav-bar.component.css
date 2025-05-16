@@ -1,0 +1,94 @@
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1); /* თეთრი გამჭვირვალე */
+  backdrop-filter: blur(10px); /* option: ლამაზი დაბლარი */
+  padding: 10px 30px; /* გაზრდილი padding */
+  height: 90px; /* განსაზღვრული სიმაღლე */
+}
+
+.navbar a {
+  color:black; /* ტექსტი თეთრად */
+}
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* ძალიან მაღალი ფენა, რომ ყველაფერზე ზემოთ იდოს */
+}
+/* Navbar - Links (მოდური ჰოვერის ეფექტი) */
+.navbar a {
+  color: black; /* ტექსტი შავ ფერში */
+  font-size: 18px; /* ზომა */
+  font-weight: 500; /* მსუბუქი წონა */
+  text-decoration: none; /* ლინკის ქვეშ ხაზი */
+  transition: color 0.3s ease, transform 0.3s ease; /* ჰოვერზე ეფექტი */
+}
+
+.navbar a:hover {
+  color: #007bff; /* ლურჯი ტექსტი */
+  transform: scale(1.1); /* ტექსტი ოდნავ გაიზრდება ჰოვერზე */
+}
+
+/* Navbar-ი იმიჯი */
+.navbar-brand img {
+  width: 50px; /* ლოგოს ზომა */
+  height: auto;
+  margin-right: 10px; /* ლოგოსა და ტექსტის შორის დისტანცია */
+}
+
+/* Navbar-ი, როდესაც ზედა ნაწილში მუქდება */
+.navbar:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* მუქი გამჭვირვალე ფონდის ეფექტი */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* ძლიერი ჩრდილი ჰოვერზე */
+}
+
+/* Navbar Collapse (responsive) */
+.navbar-collapse {
+  text-align: center; /* Links centered on small screens */
+}
+
+.navbar-toggler-icon {
+  color: white; /* Toggler Icon-ი თეთრი */
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 10px; /* Mobile view - links spacing */
+  }
+
+  .navbar a {
+    font-size: 16px; /* Mobile view - smaller text */
+  }
+}
+.navbar-nav {
+  margin-left: auto; /* გადატანა მარჯვნივ */
+}
+.navbar-nav .nav-item {
+  margin-left: 20px; /* სხვა ღილაკებს შორის დისტანცია */
+}
+
+.navbar-nav .nav-item:first-child {
+  margin-left: auto; /* ცენტრში განლაგება პირველი ღილაკისთვის */
+  margin-right: auto;
+}
+.Booking {
+  background-color: white; /* ლურჯი ფონი */
+  color: white; /* თეთრი ტექსტი */
+  padding: 10px 20px; /* padding (ზედა/ქვევით და მარცხნივ/მარჯვნივ) */
+  text-decoration: none; /* ლინკის ქვეშ ხაზი არ იქნება */
+  font-size: 16px; /* ზომა */
+  font-weight: 600; /* წონის გამკაცრება */
+  transition: background-color 0.3s ease; /* ტრანზიცია ჰოვერზე */
+  margin-left: 130px;
+  border: 1px solid black;
+}
+
+.Booking:hover {
+  background-color:  rgb(1,50,32);
+  border: 1px solid white; /* მუქი ლურჯი ფონი ჰოვერზე */
+  color: white;
+}
+.headerimage{
+  border-radius: 50%;
+}

@@ -1,0 +1,6 @@
+<div *ngIf="room">
+  <h2>{{ room.name }}</h2>
+  <p>Price: {{ room.pricePerNight }}</p>
+  <p>Max Guests: {{ room.maximumGuests }}</p>
+  <p>Status: {{ room.available ? 'Available' : 'Not Available' }}</p>
+</div>
