@@ -17,6 +17,7 @@ import { LocationComponent } from './location/location.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CartComponent } from './cart/cart.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,9 @@ import { CartComponent } from './cart/cart.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    BookingComponent,
     RoomsComponent,
+        BookingComponent,
+
     DetailsComponent,
     ErrorComponent,
     HotelsComponent,
@@ -38,7 +40,9 @@ import { CartComponent } from './cart/cart.component';
     BrowserModule,
     AppRoutingModule,
      HttpClientModule,
-     FormsModule
+     FormsModule,
+
+
   ],
   providers: [
     provideClientHydration(withEventReplay())

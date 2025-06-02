@@ -1,0 +1,83 @@
+
+
+:host {
+  display: block;
+  max-width: 500px;
+  margin: 150px auto 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* უფრო მკვეთრი ჩრდილი */
+  transition: box-shadow 0.3s ease;
+}
+
+:host(:hover) {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* ძლიერი ჩრდილი hover-ზე */
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #222;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 12px 0 6px 0;
+  font-weight: 600;
+  color: #444;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 8px 25px rgba(0, 86, 179, 0.6);
+}
+p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32; /* მუქი მწვანე */
+  background-color: #e8f5e9; /* ღია მწვანე ფონზე */
+  padding: 10px 15px;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  margin-top: 15px;
+  display: inline-block;
+}

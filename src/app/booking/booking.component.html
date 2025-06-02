@@ -1,6 +1,50 @@
-<div *ngIf="room">
-  <h2>{{ room.name }}</h2>
-  <p>Price: {{ room.pricePerNight }}</p>
-  <p>Max Guests: {{ room.maximumGuests }}</p>
-  <p>Status: {{ room.available ? 'Available' : 'Not Available' }}</p>
-</div>
+<form (ngSubmit)="submitBooking()">
+  <label>სახელი:</label>
+  <input
+    type="text"
+    [(ngModel)]="bookingData.customerName"
+    name="customerName"
+    required
+  />
+
+  <label>პირადი ნომერი:</label>
+  <input
+    type="text"
+    [(ngModel)]="bookingData.customerId"
+    name="customerId"
+    required
+  />
+
+  <label>ტელეფონი:</label>
+  <input
+    type="text"
+    [(ngModel)]="bookingData.customerPhone"
+    name="customerPhone"
+    required
+    placeholder="+995"
+  />
+
+  <label>Check-In Date:</label>
+  <input
+    type="date"
+    [(ngModel)]="bookingData.checkInDate"
+    name="checkInDate"
+    (change)="bookingData.totalPrice = calculateTotalPrice()"
+    required
+  />
+
+  <label>Check-Out Date:</label>
+  <input
+    type="date"
+    [(ngModel)]="bookingData.checkOutDate"
+    name="checkOutDate"
+      [min]="bookingData.checkInDate"
+
+    (change)="bookingData.totalPrice = calculateTotalPrice()"
+    required
+  />
+
+  <p>საერთო ფასი: {{ bookingData.totalPrice }} ₾</p>
+
+  <button type="submit">ჯავშნის გაკეთება</button>
+</form>

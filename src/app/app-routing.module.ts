@@ -6,6 +6,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { LocationComponent } from './location/location.component';
 import { DetailsComponent } from './details/details.component';
 import { BookingComponent } from './booking/booking.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -13,7 +14,9 @@ const routes: Routes = [
   {path:"contactus",component:ContactusComponent},
   {path:"location",component:LocationComponent},
   {path:"details/:id",component:DetailsComponent},
-  {path:"booking/:id",component:BookingComponent}
+  {path:"booking/:id",component:BookingComponent},
+  {path:"cart",component:CartComponent}
+
 ];
 
 @NgModule({

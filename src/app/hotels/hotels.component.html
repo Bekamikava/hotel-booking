@@ -1,9 +1,14 @@
+<div class="hotelcards">
 
-<div *ngFor="let item of product"   class="card" style="width: 18rem;">
+
+<div  *ngFor="let item of product"   class="card" style="width: 23rem;">
   <img [src]="item.featuredImage" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a  routerLink="/details/{{item.id}}" class="btn btn-primary">Book now</a>
+    <h5 class="card-title">{{item.city}}</h5>
+    <h5 class="card-title">{{item.name}}</h5>
+
+    <p class="card-text">{{item.address}}</p>
+    <a  routerLink="/details/{{item.id}}" class="btn btn-primary">View Rooms</a>
   </div>
+</div>
 </div>

@@ -1,3 +1,8 @@
+
+
+
+
+
 <section>
   <div
     style="margin-top: 200px"
@@ -19,7 +24,6 @@
             [src]="img.source"
             class="d-block w-100"
             style="height: 300px; object-fit: cover"
-            alt="Room image"
           />
         </div>
       </div>
@@ -47,6 +51,6 @@
     <p *ngIf="room.available" class="text-success">Available</p>
     <p *ngIf="!room.available" class="text-danger">Not Available</p>
 <a class="btn btn-dark" [routerLink]="['/booking', room.id]">
-  დეტალურად ნახვა
+  Book Now
 </a>  </div>
 </section>

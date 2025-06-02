@@ -1,1 +1,35 @@
-<p>cart works!</p>
+
+<section   class="products-section">
+  <article *ngFor="let product of products" class="product-card">
+    <header class="product-header">
+      <div class="price">
+        <span class="icon">💰</span>
+        <h2>{{ product.totalPrice }} GEL</h2>
+      </div>
+      <button (click)="deleteProduct(product.id)" aria-label="Delete product" class="btn btn-danger">
+        🗑 Delete
+      </button>
+      
+    </header>
+
+    <div class="product-info-grid">
+      <div class="info-item">
+        <span class="icon">👤</span>
+        <p><strong>Customer:</strong> {{ product.customerName }}</p>
+      </div>
+      <div class="info-item">
+        <span class="icon">📞</span>
+        <p><strong>Phone:</strong> {{ product.customerPhone }}</p>
+      </div>
+      <div class="info-item">
+        <span class="icon">🛎️</span>
+        <p><strong>Check In: <br></strong> {{ product.checkInDate | date:'mediumDate' }}</p>
+      </div>
+      <div class="info-item">
+        <span class="icon">🏁</span>
+        <p><strong>Check Out:</strong> {{ product.checkOutDate | date:'mediumDate' }}</p>
+      </div>
+    </div>
+  </article>
+</section>
+

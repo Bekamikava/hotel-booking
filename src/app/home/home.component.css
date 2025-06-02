@@ -17,12 +17,61 @@
   top: 25%; 
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.2); 
   transition: all 0.3s ease;
+  border: 2px solid white;
 }
 
 .homediv:hover {
   transform: translateY(-10px); 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.homediv:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.homediv video {
+
+  border-radius: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.homediv .content {
+  position: relative;
+  z-index: 1;
+  color: white; 
+  padding: 20px;
+}
+.homediv .content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.homediv .content a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  background-color: rgba(0,0,0,0.3); /* გამჭვირვალე შავი ფონით */
+  padding: 10px 15px;
+  border-radius:15px;
+  transition: background-color 0.3s ease;
+}
+
+.homediv .content a:hover {
+  background-color: rgba(0,0,0,0.6);
+  color: black;
 }
 
