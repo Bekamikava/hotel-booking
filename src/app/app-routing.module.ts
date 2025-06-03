@@ -13,8 +13,13 @@ const routes: Routes = [
   {path:"hotels",component:HotelsComponent},
   {path:"contactus",component:ContactusComponent},
   {path:"location",component:LocationComponent},
-  {path:"details/:id",component:DetailsComponent},
-  {path:"booking/:id",component:BookingComponent},
+{
+    path: "details/:id",
+    component: DetailsComponent,
+    data: {
+      renderMode: 'default'
+    }
+  },  {path:"booking/:id",component:BookingComponent},
   {path:"cart",component:CartComponent}
 
 ];
