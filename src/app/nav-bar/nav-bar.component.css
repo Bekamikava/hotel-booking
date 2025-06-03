@@ -3,6 +3,7 @@
   backdrop-filter: blur(10px); /* option: ლამაზი დაბლარი */
   padding: 10px 30px; /* გაზრდილი padding */
   height: 90px; /* განსაზღვრული სიმაღლე */
+  
 }
 
 .navbar a {
@@ -13,48 +14,49 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999; /* ძალიან მაღალი ფენა, რომ ყველაფერზე ზემოთ იდოს */
+  z-index: 999; 
 }
-/* Navbar - Links (მოდური ჰოვერის ეფექტი) */
 .navbar a {
-  color: black; /* ტექსტი შავ ფერში */
-  font-size: 18px; /* ზომა */
-  font-weight: 500; /* მსუბუქი წონა */
-  text-decoration: none; /* ლინკის ქვეშ ხაზი */
-  transition: color 0.3s ease, transform 0.3s ease; /* ჰოვერზე ეფექტი */
+  color: black; 
+  font-size: 18px; 
+  font-weight: 500; 
+  text-decoration: none; 
+  transition: color 0.3s ease, transform 0.3s ease; 
 }
 
 .navbar a:hover {
-  color: #007bff; /* ლურჯი ტექსტი */
-  transform: scale(1.1); /* ტექსტი ოდნავ გაიზრდება ჰოვერზე */
+  color: #007bff;
+  transform: scale(1.1); 
 }
 
-/* Navbar-ი იმიჯი */
+
 .navbar-brand img {
-  width: 50px; /* ლოგოს ზომა */
+  width: 50px; 
   height: auto;
-  margin-right: 10px; /* ლოგოსა და ტექსტის შორის დისტანცია */
+  margin-right: 10px; 
 }
 
-/* Navbar-ი, როდესაც ზედა ნაწილში მუქდება */
+
 .navbar:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* მუქი გამჭვირვალე ფონდის ეფექტი */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* ძლიერი ჩრდილი ჰოვერზე */
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
 }
 
-/* Navbar Collapse (responsive) */
+
 .navbar-collapse {
-  text-align: center; /* Links centered on small screens */
+  text-align: center; 
 }
 
 .navbar-toggler-icon {
-  color: white; /* Toggler Icon-ი თეთრი */
+  color: white; 
 }
 
 /* Mobile view */
 @media (max-width: 768px) {
   .navbar-nav {
-    margin-top: 10px; /* Mobile view - links spacing */
+    margin-top: 25px; /* Mobile view - links spacing */
+    display: flex;
+  
   }
 
   .navbar a {
@@ -62,7 +64,8 @@
   }
 }
 .navbar-nav {
-  margin-left: auto; /* გადატანა მარჯვნივ */
+  margin-left: auto;
+ /* გადატანა მარჯვნივ */
 }
 .navbar-nav .nav-item {
   margin-left: 20px; /* სხვა ღილაკებს შორის დისტანცია */

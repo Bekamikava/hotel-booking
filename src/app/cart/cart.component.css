@@ -1,7 +1,12 @@
+body {
+  overflow-x: hidden !important;
+}
+
 .products-section {
   max-width: 960px;
   margin: 6rem auto;
   padding: 0 1rem;
+  overflow-x: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #eef2f7 0%, #d6e0f0 100%);
 }
